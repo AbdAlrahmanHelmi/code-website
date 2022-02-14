@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,16 +10,18 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="bg-gray-50 h-16">
-      <nav class="flex items-center justify-between px-64 mx-auto py-2">
-        <h1>
+  <body class="font-serif">
+    <div class="bg-gray-50 h-16 opacity-90">
+      <nav
+        class="flex items-center justify-between px-64 mx-auto py-2 bg-gray-50 h-16 fixed"
+      >
+        <h1 class="mr-16">
           <img src="./img/logo.png" alt="logo" class="h-12" />
         </h1>
         <div>
           <ul class="flex">
             <li class="mr-6 text-xl hover:text-pink-400">
-              <a href="">Home</a>
+              <a href="#header">Home</a>
             </li>
             <li class="mr-6 text-xl hover:text-pink-400">
               <a href="">Services</a>
@@ -44,5 +46,25 @@
         </div>
       </nav>
     </div>
+    <header id="header" class="flex items-center justify-between px-64 my-32">
+      <div class="w-1\2">
+        <img src="./img/header.png" alt="header img" class="h-96" />
+      </div>
+      <div class="font-bold space-y-8 w-1/2 pl-24">
+        <h2 class="text-3xl">Multipurpose Landing Template</h2>
+        <h1 class="text-6xl">Beautifully</h1>
+        <h2 class="text-6xl">Simple,code</h2>
+        <h3 class="text-2xl tracking-wider">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+          corporis?
+        </h3>
+        <button
+          class="bg-pink-600 text-white px-8 py-3 hover:bg-blue-400 rounded-full text-xl ml-16"
+        >
+          Learn More
+        </button>
+      </div>
+    </header>
+    
   </body>
 </html>
